@@ -448,10 +448,20 @@ p {
   /* Ajusta el tamaño de la letra según tus preferencias */
 }
 /* Estilos para el fondo del texto jaspeado */
-.h1{
-  font-family: 'Noto Sans KR', sans-serif; 
-  
+h1 {
+  font-family: 'Noto Sans KR', sans-serif;
+  background: linear-gradient(to right, #2b0f21, #d42284);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: rgba(241, 96, 181, 0.7);
+  padding: 10px;
+
 }
+/*preguntarr
+
+
 
 /* Estilos adicionales según sea necesario */
 
