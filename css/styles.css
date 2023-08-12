@@ -243,6 +243,7 @@ footer {
 
 
 
+
 .section-cuarta {
   background-color: #f17d92;
   padding: 4em 0;
@@ -401,7 +402,9 @@ footer {
 p {
   font-family: 'Merriweather', serif;
   font-size: 17px;
- 
+ /* Estilos para asegurar que el texto esté alineado correctamente */
+ text-align: left;
+
   /* Ajusta el tamaño de la letra según tus preferencias */
 }
 /* Estilos para el fondo del texto jaspeado */
@@ -501,24 +504,5 @@ h1 {
   .footer-image img {
     max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
     height: auto; /* Permite que la altura se ajuste automáticamente */
-  }
-}
-/* Estilos para pantallas más pequeñas (350x562) */
-/* Estilos para pantallas más pequeñas (350x562) */
-@media (max-width: 350px) {
-  .section-tercera {
-    padding: 2em 0; /* Ajusta el padding superior e inferior */
-  }
-
-  .section-terceracontent {
-    max-width: 100%; /* Usa el ancho completo de la pantalla */
-    padding: 0 10px; /* Reduce el espacio de los lados */
-    font-size: 1.2em; /* Reduzca el tamaño de la fuente */
-  }
-  
-  /* Ajusta el diseño de la cuadrícula para mostrar dos elementos por fila */
-  .section-terceracontent .service-item {
-    flex-basis: calc(50% - 1em);
-    margin: 0.5em;
   }
 }
