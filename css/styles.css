@@ -185,7 +185,7 @@ footer {
 }
 
 
-/* Agregar transición y animación para la clase .section-colored */
+
 .section-colored {
   background-color: #f3cae5;
   padding: 4em 0;
@@ -198,34 +198,12 @@ footer {
   align-items: center;
   justify-content: center;
   
-  /* Agregar animación */
-  animation: slideInFromRight 4s ease-out forwards; /* 1s es la duración de la animación, ajusta según tus preferencias */
+
 }
 
 
-/* Definir la animación */
-@keyframes slideInFromRight {
-  0% {
-      transform: translateX(-100%); /* Iniciar fuera del área visible hacia la derecha */
-      opacity: 0; /* Comenzar con opacidad 0 */
-  }
-  100% {
-      transform: translateX(0); /* Llegar a la posición original */
-      opacity: 1; /* Al final de la animación, opacidad completa */
-  }
-}
 
-/* Resto de los estilos para la sección section-colored */
-.section-content {
-  max-width: 800px;
-  margin: 0 auto;
-  font-family: 'Your Custom Font', Arial, sans-serif;
-  line-height: 1.6;
-  text-align: left;
-  padding-left: 20px;
-  padding-right: 20px;
-  font-size: 1.6em;
-}
+
 
 
 
@@ -240,22 +218,10 @@ footer {
   position: relative;
   z-index: 1;
   margin-top: 0vh;
-  
-  /* Agregar animación */
-  animation: slideInFromLeft 5s ease-out forwards; /* 1s es la duración de la animación, ajusta según tus preferencias */
+
 }
 
-/* Definir la animación */
-@keyframes slideInFromLeft {
-  0% {
-      transform: translateX(-100%); /* Iniciar fuera del área visible hacia la izquierda */
-      opacity: 0; /* Comenzar con opacidad 0 */
-  }
-  100% {
-      transform: translateX(0); /* Llegar a la posición original */
-      opacity: 1; /* Al final de la animación, opacidad completa */
-  }
-}
+
 
 /* Estilos para el contenido de la sección tercera */
 .section-terceracontent {
@@ -274,7 +240,7 @@ footer {
 
 
 
-/* Agregar transición y animación para la clase .section-cuarta */
+
 .section-cuarta {
   background-color: #f17d92;
   padding: 4em 0;
@@ -283,22 +249,11 @@ footer {
   position: relative;
   z-index: 1;
   margin-top: 0vh;
-  transform: translateY(-100%); /* Comienza fuera del área visible hacia arriba */
-  opacity: 0; /* Comienza con opacidad 0 */
-  animation: slideInFromTop 6s ease-out forwards; /* 1s es la duración de la animación, ajusta según tus preferencias */
+
+
 }
 
-/* Definir la animación */
-@keyframes slideInFromTop {
-  0% {
-      transform: translateY(-100%); /* Iniciar fuera del área visible hacia arriba */
-      opacity: 0; /* Comenzar con opacidad 0 */
-  }
-  100% {
-      transform: translateY(0); /* Llegar a la posición original */
-      opacity: 1; /* Al final de la animación, opacidad completa */
-  }
-}
+
 
 /* Resto de los estilos para la sección section-cuarta */
 .section-concuarta {
@@ -506,3 +461,55 @@ h1 {
   }
 }
 
+/* Estilos para pantallas más pequeñas (350x562) */
+@media (max-width: 350px) {
+  .nosotras {
+    flex-direction: column;
+  }
+
+  .nosotras-img {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .parrafo-nosotras,
+  .servicios-texto {
+    padding: 0 10px;
+    font-size: 14px;
+  }
+
+  .main .button-index {
+    font-size: 12px;
+  }
+  
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .contact-info {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-image {
+    flex-basis: 100%;
+  }
+  
+  .footer-image img {
+    max-width: 80%; /* Ajusta el tamaño máximo de la imagen */
+    height: auto; /* Permite que la altura se ajuste automáticamente */
+  }
+}
+/* Estilos para pantallas más pequeñas (350x562) */
+@media (max-width: 350px) {
+  .section-tercera {
+    padding: 2em 0; /* Ajusta el padding superior e inferior */
+  }
+
+  .section-terceracontent {
+    max-width: 100%; /* Usa el ancho completo de la pantalla */
+    padding: 0 10px; /* Reduce el espacio de los lados */
+    font-size: 1.2em; /* Reduzca el tamaño de la fuente */
+  }
+}
