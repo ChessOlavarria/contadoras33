@@ -442,16 +442,18 @@ footer {
   height: auto; /* Permite que la altura se ajuste automáticamente */
 }
 p {
-  font-size: 16px; /* Ajusta el tamaño de la letra según tus preferencias */
+  font-family: 'Merriweather', serif;
+  font-size: 17px;
+ 
+  /* Ajusta el tamaño de la letra según tus preferencias */
 }
-h1 {
-  font-size: 30px; /* Ajusta el tamaño de la letra según tus preferencias */
-  position: relative; /* Establecer posición relativa para crear una superposición */
-  display: inline-block; /* Asegurar que el fondo blanco solo cubra el contenido del texto */
-  padding: 0 10px; /* Añadir un poco de espacio alrededor del texto */
-  background-color: white; /* Fondo blanco para el texto */
-  z-index: 1; /* Asegurar que el texto esté sobre el fondo */
+/* Estilos para el fondo del texto jaspeado */
+.h1{
+  font-family: 'Noto Sans KR', sans-serif; 
+  
 }
+
+/* Estilos adicionales según sea necesario */
 
 
 
