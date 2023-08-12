@@ -171,10 +171,6 @@ footer {
 
 
 
-.section-white:hover {
-  background-color: #f3cae5;
-  color: #000000;
-}
 
 .section-content {
   max-width: 800px;
@@ -197,11 +193,15 @@ footer {
   color: #050505;
   position: relative;
   z-index: 1;
-  margin-top: 1vh;
+  margin-top: 0; /* Ajusta el valor según lo que desees */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   /* Agregar animación */
   animation: slideInFromRight 4s ease-out forwards; /* 1s es la duración de la animación, ajusta según tus preferencias */
 }
+
 
 /* Definir la animación */
 @keyframes slideInFromRight {
@@ -457,4 +457,40 @@ h1 {
 
 
 
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .nosotras {
+      flex-direction: column;
+  }
+  
+  .nosotras-img {
+      width: 100%; /* Otra opción sería reducir el tamaño aquí */
+      margin-left: 0;
+  }
+  
+  .parrafo-nosotras {
+      padding: 0 20px;
+  }
+  
+  .servicios-texto {
+      padding: 0 20px;
+  }
+  
+  .main .button-index {
+      font-size: 14px;
+  }
+}
+
+/* Estilos para pantallas aún más pequeñas (como smartphones) */
+@media (max-width: 480px) {
+  .parrafo-nosotras,
+  .servicios-texto {
+      padding: 0 10px;
+  }
+  
+  .main .button-index {
+      font-size: 12px;
+  }
+}
 
